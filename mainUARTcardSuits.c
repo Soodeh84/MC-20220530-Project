@@ -19,7 +19,7 @@ int edgeInterrupt = 0;  // global variable to know when pendulum has reached edg
 
 
 //Display clover
-void displayInPendulumD(void) {//TODO: change the if statements to if else
+void displayInPendulumD(void) {
 
     int i;
     for(i= 0; i<59 ;i++ ){
@@ -29,17 +29,17 @@ void displayInPendulumD(void) {//TODO: change the if statements to if else
         GPIO_PORTM_DATA_R = 0x00;
         if(i==27)
             GPIO_PORTM_DATA_R = 0x38;
-        if(i==28)
+        else if(i==28)
             GPIO_PORTM_DATA_R = 0x38;
-        if(i==29)
+        else if(i==29)
             GPIO_PORTM_DATA_R = 0xD2;
-        if(i==30)
+        else if(i==30)
             GPIO_PORTM_DATA_R = 0xFE;
-        if(i==31)
+        else if(i==31)
             GPIO_PORTM_DATA_R = 0xD2;
-        if(i==32)
+        else if(i==32)
             GPIO_PORTM_DATA_R = 0x38;
-        if(i==33)
+        else (i==33)
             GPIO_PORTM_DATA_R = 0x38;
     }
 }
@@ -47,7 +47,7 @@ void displayInPendulumD(void) {//TODO: change the if statements to if else
 
 
 //Display diamond
-void displayInPendulumA(void) {//TODO: change the if statements to if else
+void displayInPendulumA(void) {//TODO: change the if statements to else if
     int i;
     for(i= 0; i<59 ;i++ ){
         TIMER0_CTL_R |= 0x0001;
@@ -73,7 +73,7 @@ void displayInPendulumA(void) {//TODO: change the if statements to if else
 
 
  //Display spade
- void displayInPendulumW(void) {//TODO: change the if statements to if else
+ void displayInPendulumW(void) {//TODO: change the if statements to else if 
      int i;
      for(i= 0; i<59 ;i++ ){
          TIMER0_CTL_R |= 0x0001;
@@ -99,7 +99,7 @@ void displayInPendulumA(void) {//TODO: change the if statements to if else
 
  
 //Display big heart
-void displayInPendulumS(void) {//TODO: change the if statements to if else
+void displayInPendulumS(void) {//TODO: change the if statements to else if 
     int i;
     for(i= 0; i<59 ;i++ ){
         TIMER0_CTL_R |= 0x0001;
