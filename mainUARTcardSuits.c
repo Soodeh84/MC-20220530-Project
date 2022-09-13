@@ -56,17 +56,17 @@ void displayInPendulumA(void) {//TODO: change the if statements to else if
         GPIO_PORTM_DATA_R = 0x00;
         if(i==27)
             GPIO_PORTM_DATA_R = 0x10;
-        if(i==28)
+        else if(i==28)
             GPIO_PORTM_DATA_R = 0x28;
-        if(i==29)
+        else if(i==29)
             GPIO_PORTM_DATA_R = 0x44;
-        if(i==30)
+        else if(i==30)
             GPIO_PORTM_DATA_R = 0x82;
-        if(i==31)
+        else if(i==31)
             GPIO_PORTM_DATA_R = 0x44;
-        if(i==32)
+        else if(i==32)
             GPIO_PORTM_DATA_R = 0x28;
-        if(i==33)
+        else(i==33)
             GPIO_PORTM_DATA_R = 0x10;
     }
 }
@@ -82,17 +82,17 @@ void displayInPendulumA(void) {//TODO: change the if statements to else if
          GPIO_PORTM_DATA_R = 0x00;
          if(i==27)
              GPIO_PORTM_DATA_R = 0x18;
-         if(i==28)
+         else if(i==28)
              GPIO_PORTM_DATA_R = 0x28;
-         if(i==29)
+         else if(i==29)
              GPIO_PORTM_DATA_R = 0x52;
-         if(i==30)
+         else if(i==30)
              GPIO_PORTM_DATA_R = 0x9E;
-         if(i==31)
+         else if(i==31)
              GPIO_PORTM_DATA_R = 0x52;
-         if(i==32)
+         else if(i==32)
              GPIO_PORTM_DATA_R = 0x28;
-         if(i==33)
+         else(i==33)
              GPIO_PORTM_DATA_R = 0x18;
      }
 }
@@ -108,17 +108,17 @@ void displayInPendulumS(void) {//TODO: change the if statements to else if
         GPIO_PORTM_DATA_R = 0x00;
         if(i==27)
             GPIO_PORTM_DATA_R = 0x70;
-        if(i==28)
+        else if(i==28)
             GPIO_PORTM_DATA_R = 0x88;
-        if(i==29)
+        else if(i==29)
             GPIO_PORTM_DATA_R = 0x44;
-        if(i==30)
+        else if(i==30)
             GPIO_PORTM_DATA_R = 0x22;
-        if(i==31)
+        else if(i==31)
             GPIO_PORTM_DATA_R = 0x44;
-        if(i==32)
+        else if(i==32)
             GPIO_PORTM_DATA_R = 0x88;
-        if(i==33)
+        else(i==33)
             GPIO_PORTM_DATA_R = 0x70;
     }
 }
